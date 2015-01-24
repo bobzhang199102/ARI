@@ -1,6 +1,7 @@
 package com.example.xiaobozhang.ari;
 
 import android.app.AlertDialog;
+import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +11,7 @@ import android.widget.Button;
 import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends ActionBarActivity implements  View.OnClickListener{
 
     Button goMenuBtn;
 
@@ -19,12 +20,7 @@ public class MainActivity extends ActionBarActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         goMenuBtn = (Button) findViewById(R.id.button_home);
-        goMenuBtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(getApplicationContext(),"welcome",Toast.LENGTH_SHORT);
-            }
-        });
+        goMenuBtn.setOnClickListener(this);
 
     }
 
@@ -49,5 +45,31 @@ public class MainActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public void goMenu(View view) {
+
+        Intent goMenuIntent = new Intent(this,MenuActivity.class);
+
+        final int result = 1;
+
+        goMenuIntent.putExtra("callingActivity","MainActivity");
+
+        startActivity(goMenuIntent);
+    }
+
+    private void buttonClick() {
+
+        startActivity(new Intent("android.intent.action.MenuActivity"));
+    }
+    @Override
+    public void onClick(View v) {
+        switch(v.getId())
+        {
+            case R.id.button_home:
+                buttonClick();
+                break;
+        }
+
     }
 }

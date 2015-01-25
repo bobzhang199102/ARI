@@ -9,5 +9,6 @@
     <string name="title_activity_tutorial">TutorialActivity</string>
     <string name="tutorial_text">The Java Tutorials are practical guides for programmers who want to use the Java programming language to create applications. They include hundreds of complete, working examples, and dozens of lessons. Groups of related lessons are organized into \"trails\". The Java Tutorials primarily describe features in Java SE 8. For best results, download JDK 8. What\'s New The Java Tutorials are continuously updated to keep up with changes to the Java Platform and to incorporate feedback from our readers. This release of the tutorial corresponds to the JDK 8u20 release. This release includes the following changes</string>
     <string name="title_activity_youtube">YoutubeActivity</string>
+    <string name="title_activity_aboutus">AboutusActivity</string>
 
 </resources>

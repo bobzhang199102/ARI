@@ -32,10 +32,24 @@
         <activity
             android:name=".TutorialActivity"
             android:label="@string/title_activity_tutorial" >
+            <intent-filter>
+                <action android:name="android.intent.action.Tutorial" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
         <activity
             android:name=".YoutubeActivity"
             android:label="@string/title_activity_youtube" >
+            <intent-filter>
+                <action android:name="android.intent.action.YoutubeActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".AboutusActivity"
+            android:label="@string/title_activity_aboutus" >
         </activity>
     </application>
 

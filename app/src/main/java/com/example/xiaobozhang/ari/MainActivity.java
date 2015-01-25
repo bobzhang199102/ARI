@@ -19,8 +19,13 @@ public class MainActivity extends ActionBarActivity implements  View.OnClickList
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+
         goMenuBtn = (Button) findViewById(R.id.button_home);
         goMenuBtn.setOnClickListener(this);
+
+
+
 
     }
 
@@ -52,6 +57,8 @@ public class MainActivity extends ActionBarActivity implements  View.OnClickList
 
         startActivity(new Intent("android.intent.action.MenuActivity"));
     }
+
+
     @Override
     public void onClick(View v) {
         switch(v.getId())
@@ -59,6 +66,7 @@ public class MainActivity extends ActionBarActivity implements  View.OnClickList
             case R.id.button_home:
                 buttonClick();
                 break;
+
         }
 
     }

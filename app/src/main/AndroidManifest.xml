@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".MenuActivity"
             android:label="@string/title_activity_menu" >
@@ -28,7 +29,13 @@
         <activity
             android:name=".settingActivity"
             android:label="@string/title_activity_setting" >
+            <intent-filter>
+                <action android:name="android.intent.action.setting" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
+
         <activity
             android:name=".TutorialActivity"
             android:label="@string/title_activity_tutorial" >
@@ -38,6 +45,7 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".YoutubeActivity"
             android:label="@string/title_activity_youtube" >
@@ -47,9 +55,15 @@
                 <category android:name="android.intent.category.DEFAULT" />
             </intent-filter>
         </activity>
+
         <activity
             android:name=".AboutusActivity"
             android:label="@string/title_activity_aboutus" >
+            <intent-filter>
+                <action android:name="android.intent.action.AboutusActivity" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
         </activity>
     </application>
 

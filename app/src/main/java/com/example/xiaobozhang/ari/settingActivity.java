@@ -48,6 +48,7 @@ public class settingActivity extends ActionBarActivity implements View.OnClickLi
 
         startActivity(new Intent("android.intent.action.MAIN"));
     }
+
     @Override
     public void onClick(View v) {
         switch(v.getId())

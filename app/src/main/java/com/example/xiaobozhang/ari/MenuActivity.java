@@ -11,7 +11,7 @@ import android.widget.Button;
 
 public class MenuActivity extends ActionBarActivity implements View.OnClickListener {
 
-    Button goTutorialBtn;
+    Button goTutorialBtn, goAboutusBtn, goSettingBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -19,6 +19,12 @@ public class MenuActivity extends ActionBarActivity implements View.OnClickListe
 
         goTutorialBtn = (Button) findViewById(R.id.button_tutorial);
         goTutorialBtn.setOnClickListener(this);
+
+        goAboutusBtn = (Button) findViewById(R.id.button_aboutus);
+        goAboutusBtn.setOnClickListener(this);
+
+        goSettingBtn = (Button) findViewById(R.id.button_goSetting);
+        goSettingBtn.setOnClickListener(this);
     }
 
 
@@ -44,16 +50,30 @@ public class MenuActivity extends ActionBarActivity implements View.OnClickListe
         return super.onOptionsItemSelected(item);
     }
 
-    private void buttonClick() {
+    private void buttonClick1() {
 
         startActivity(new Intent("android.intent.action.Tutorial"));
+    }
+    private void buttonClick2() {
+
+        startActivity(new Intent("android.intent.action.AboutusActivity"));
+    }
+    private void buttonClick3() {
+
+        startActivity(new Intent("android.intent.action.setting"));
     }
     @Override
     public void onClick(View v) {
         switch(v.getId())
         {
             case R.id.button_tutorial:
-                buttonClick();
+                buttonClick1();
+                break;
+            case R.id.button_aboutus:
+                buttonClick2();
+                break;
+            case R.id.button_goSetting:
+                buttonClick3();
                 break;
         }
 

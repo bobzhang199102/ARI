@@ -1,0 +1,111 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.example.xiaobozhang.ari.settingActivity"
+    android:orientation="vertical"
+    android:background="#">
+
+
+
+    < RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="#888888"
+        android:layout_height="80dip">
+
+
+        <TextView
+            android:id="@+id/tv_sound"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Sound"
+            android:textColor="Black"
+            android:textSize="40dp"/>
+
+
+    </RelativeLayout>
+
+
+    <View
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="1dip"/>
+
+    < RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="#888888"
+        android:layout_height="80dip">
+
+        <TextView
+            android:id="@+id/tv_subtitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Subtitle"
+            android:textColor="Black"
+
+            android:textSize="40dp"/>
+
+        <Switch
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="New Switch"
+            android:id="@+id/switch1"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="66dp"
+            android:layout_marginEnd="66dp"
+            android:checked="false"
+            android:background="#3fa9f5" />
+
+
+    </RelativeLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:background="#ffffff"
+        android:layout_height="1dip"/>
+
+    < RelativeLayout
+        android:layout_width="fill_parent"
+        android:background="#888888"
+        android:layout_height="80dip">
+
+        <TextView
+            android:id="@+id/tv_others"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:text="Others"
+            android:textColor="Black"
+            android:textSize="40dp"/>
+
+
+    </RelativeLayout>
+
+
+
+
+    <Button
+        android:id="@+id/button_ari_setting"
+        android:onClick="goHome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Home"
+        android:layout_gravity="center_horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="47dp"
+        android:textSize="30dp"
+        android:background="#3fa9f5"
+        android:textColor="#ffffff" />
+
+
+</LinearLayout>

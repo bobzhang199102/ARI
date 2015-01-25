@@ -1,6 +1,5 @@
 package com.example.xiaobozhang.ari;
 
-import android.app.AlertDialog;
 import android.content.Intent;
 import android.support.v7.app.ActionBarActivity;
 import android.os.Bundle;
@@ -8,27 +7,24 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
-import android.widget.Toast;
 
 
-public class MainActivity extends ActionBarActivity implements  View.OnClickListener{
+public class settingActivity extends ActionBarActivity implements View.OnClickListener{
 
-    Button goMenuBtn;
-
+    Button goHomeBtn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        goMenuBtn = (Button) findViewById(R.id.button_home);
-        goMenuBtn.setOnClickListener(this);
-
+        setContentView(R.layout.activity_setting);
+        goHomeBtn = (Button) findViewById(R.id.button_home);
+        goHomeBtn.setOnClickListener(this);
     }
 
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.menu_main, menu);
+        getMenuInflater().inflate(R.menu.menu_setting, menu);
         return true;
     }
 
@@ -46,7 +42,6 @@ public class MainActivity extends ActionBarActivity implements  View.OnClickList
 
         return super.onOptionsItemSelected(item);
     }
-
 
     private void buttonClick() {
 

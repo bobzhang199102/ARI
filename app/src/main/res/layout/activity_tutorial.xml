@@ -26,9 +26,9 @@
         android:background="#3fa9f5"
         android:textColor="#FFFFFF"
         android:textSize="30dp"
+        android:layout_marginBottom="102dp"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="77dp" />
+        android:layout_centerHorizontal="true" />
 
 
 </RelativeLayout>

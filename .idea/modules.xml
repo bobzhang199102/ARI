@@ -4,6 +4,9 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/ARI.iml" filepath="$PROJECT_DIR$/ARI.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudemo/menudemo.iml" filepath="$PROJECT_DIR$/menudemo/menudemo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudrawer/menudrawer.iml" filepath="$PROJECT_DIR$/menudrawer/menudrawer.iml" />
+      <module fileurl="file://$PROJECT_DIR$/menudrawer-samples/menudrawer-samples.iml" filepath="$PROJECT_DIR$/menudrawer-samples/menudrawer-samples.iml" />
     </modules>
   </component>
 </project>

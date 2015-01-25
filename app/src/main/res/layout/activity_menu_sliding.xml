@@ -1,0 +1,52 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="horizontal"
+    tools:context=".MainActivity" >
+
+    <!-- 使用自定义的侧滑布局，orientation必须为水平方向 -->
+
+    <com.example.xiaobozhang.ari.SlidingLayout
+        android:id="@+id/slidingLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="horizontal" >
+
+        <RelativeLayout
+            android:id="@+id/menu"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="#00ccff" >
+
+
+
+            <ListView
+                android:id="@+id/contentListMenu"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </RelativeLayout>
+
+        <LinearLayout
+            android:id="@+id/content"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="vertical" >
+
+            <Button
+                android:id="@+id/menuButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Menu" />
+
+            <ListView
+                android:id="@+id/contentList"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent" >
+            </ListView>
+        </LinearLayout>
+
+    </com.example.xiaobozhang.ari.SlidingLayout>
+
+</LinearLayout>  

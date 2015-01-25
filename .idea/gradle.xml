@@ -9,6 +9,9 @@
           <set>
             <option value="$PROJECT_DIR$" />
             <option value="$PROJECT_DIR$/app" />
+            <option value="$PROJECT_DIR$/menudemo" />
+            <option value="$PROJECT_DIR$/menudrawer" />
+            <option value="$PROJECT_DIR$/menudrawer-samples" />
           </set>
         </option>
       </GradleProjectSettings>

@@ -55,7 +55,7 @@ public class MainActivity extends ActionBarActivity implements  View.OnClickList
 
     private void buttonClick() {
 
-        startActivity(new Intent("android.intent.action.MenuActivity"));
+        startActivity(new Intent("android.intent.action.MenuSlidingActivity"));
     }
 
 
